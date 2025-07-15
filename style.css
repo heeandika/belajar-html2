@@ -96,5 +96,10 @@ body{
     .contact-right{
         display: none;
     }
+
+    .contact-left{
+        align-items: center;
+        text-align: center;
+    }
     
 }
