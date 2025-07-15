@@ -3,13 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ContactForm</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div>
-        <h1>belajar html</h1>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi, alias.</p>
-        <img src="https://sagufoundation.org/wp-content/uploads/2025/01/sf-logo-anniversary-2025.png" alt="Logo Sagufoundation" width="200" height="100" style="background-color: rgb(0, 0, 0);">
+    <div class="contact-container">
+        <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+            <div>
+                <h2>Get in touch</h2>
+                <hr>
+            </div>
+            <input type="hidden" name="access_key" value="e8f22e5e-e5f1-4569-a35c-7d8c0665373f">
+            <input type="text" name="name" placeholder="Your Name" class="contact-input" required>
+            <input type="email" name="email" placeholder="Your Email" class="contact-input" required>
+            <textarea name="message" placeholder="Your message" class="contact-input"required ></textarea>
+            <button type="submit">submit <img src="asset/arrow_icon.png" alt=""></button>
+        </form>
+        <div class="contact-right">
+            <div class="contact-right-item">
+                <img src="asset/right_img.png" alt="">
+        </div>
     </div>
 </body>
 </html>
